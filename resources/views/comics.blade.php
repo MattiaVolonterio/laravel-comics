@@ -26,7 +26,7 @@
                 </div>
 
                 <div class="button-section">
-                    <button class="button-primary">LOAD MORE</button>
+                    <button class="button button-primary">LOAD MORE</button>
                 </div>
             </div>
             
