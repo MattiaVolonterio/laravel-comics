@@ -143,7 +143,38 @@ header {
     }
 
     .body-bottom {
-        min-height: 100px;
+        min-height: 150px;
         background-color: #0282f9;
+        display: flex;
+        align-items: center;
+
+        .container {
+            ul {
+                display: flex;
+                justify-content: space-around;
+
+                margin: 0;
+                padding: 0;
+
+                li {
+                    display: inline-block;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+
+                        font-size: 0.8rem;
+
+                        img {
+                            height: 60px;
+                            aspect-ratio: 1;
+                            margin-right: 10px;
+
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
