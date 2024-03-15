@@ -3,7 +3,7 @@
     <div class="footer-top">
         <div class="container">
             <div class="row">
-                <div class="col-5">
+                <div class="col-6">
                     <div class="link-list">
                         {{-- link list 1 --}}
                         <div class="link-list-1">
@@ -111,6 +111,12 @@
                     <div class="copyright">
                         <p>All Site Content TM and &copy; 2020 DC Entertainment, unless otherwise <a href="#">noted here</a>. All right reserved. <a href="#">Cookies Setting</a></p>
                     </div>
+                </div>
+                <div class="col-6">
+                    <div class="logo-container">
+                         <img src="{{Vite::asset('resources/images/dc-logo-bg.png')}}" alt="logo">
+                    </div>
+
                 </div>
             </div>
         </div>
