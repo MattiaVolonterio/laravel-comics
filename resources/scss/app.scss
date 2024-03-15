@@ -1,5 +1,21 @@
 @import "~bootstrap/scss/bootstrap";
 
+// UTILS
+.button-primary {
+    border: none;
+    background-color: #0282f9;
+
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+
+    padding: 8px 35px;
+}
+
+.button-primary:hover {
+    background-color: #7ec0fe;
+}
+
 // HEADER
 header {
     .top-header {
@@ -69,5 +85,65 @@ header {
         background-image: url("../images/jumbotron.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+    }
+}
+
+// COMICS
+#comics-body {
+    .body-top {
+        min-height: 200px;
+        background-color: #1c1c1c;
+
+        .container {
+            position: relative;
+            .body-label {
+                position: absolute;
+                top: -30px;
+                left: -10px;
+
+                width: 250px;
+                height: 60px;
+                background-color: #0282f9;
+
+                color: white;
+                font-weight: bold;
+                font-size: 1.2rem;
+                text-align: center;
+                line-height: 60px;
+            }
+            .row {
+                padding-top: 2rem;
+                padding-bottom: 4rem;
+                .col-2 {
+                    .comic-card {
+                        height: 250px;
+
+                        img {
+                            height: 80%;
+                            object-fit: cover;
+                            object-position: top;
+                        }
+
+                        p {
+                            color: white;
+                            font-weight: bold;
+
+                            padding-top: 10px;
+                        }
+                    }
+                }
+            }
+
+            .button-section {
+                display: flex;
+                justify-content: center;
+                padding-bottom: 2rem;
+            }
+        }
+    }
+
+    .body-bottom {
+        min-height: 100px;
+        background-color: #0282f9;
     }
 }
