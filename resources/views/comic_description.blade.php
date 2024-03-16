@@ -130,14 +130,3 @@
     
 </body>
 @endsection
-
-
-{{--   "title" => "Action Comics #1000: The Deluxe Edition"
-  "description" => "The celebration of 1,000 issues of Action Comics continues with a new, Deluxe Edition of the amazing comic that won raves when it hit comics shops in April! Thi
- ▶
-"
-  "thumb" => "https://www.coverbrowser.com/image/action-comics/1-1.jpg"
-  "price" => "$19.99"
-  "series" => "Action Comics"
-  "sale_date" => "2018-10-02"
-  "type" => "comic book" --}}
