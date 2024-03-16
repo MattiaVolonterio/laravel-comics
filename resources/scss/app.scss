@@ -43,7 +43,7 @@ header {
             gap: 20px;
 
             span {
-                display: blockblock;
+                display: inline-block;
                 color: white;
                 font-size: 10px;
                 text-align: end;
@@ -55,8 +55,8 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
 
         .header-logo {
             width: 80px;
@@ -67,6 +67,7 @@ header {
             padding: 0;
             li {
                 display: inline-block;
+                height: 100%;
                 margin-right: 20px;
                 .link {
                     text-decoration: none;
@@ -75,6 +76,7 @@ header {
 
                 .link.active {
                     color: #399dfa;
+                    border-bottom: 3px solid #399dfa;
                 }
             }
         }
@@ -130,18 +132,21 @@ header {
                     cursor: pointer;
                     .comic-card {
                         height: 250px;
+                        a {
+                            text-decoration: none;
 
-                        img {
-                            height: 80%;
-                            object-fit: cover;
-                            object-position: top;
-                        }
+                            img {
+                                height: 80%;
+                                object-fit: cover;
+                                object-position: top;
+                            }
 
-                        p {
-                            color: white;
-                            font-weight: bold;
+                            p {
+                                color: white;
+                                font-weight: bold;
 
-                            padding-top: 10px;
+                                padding-top: 10px;
+                            }
                         }
                     }
                 }
@@ -293,6 +298,191 @@ footer {
                     li {
                         display: inline-block;
                         margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// COMIC DESCRIPTION
+#comic-description {
+    .divider {
+        height: 80px;
+        background-color: #399dfa;
+
+        .container {
+            position: relative;
+            width: 1080px;
+            height: 100%;
+
+            .comic-thumb {
+                position: absolute;
+                bottom: 30px;
+                width: 200px;
+            }
+        }
+    }
+
+    .container-comic {
+        width: 1080px;
+        margin: auto;
+        padding-top: 2.5rem;
+        padding-bottom: 3rem;
+
+        .col-8 {
+            .comic-title {
+                font-size: 1.7rem;
+                font-weight: bold;
+                color: #00395d;
+
+                margin-top: 15px;
+            }
+
+            .available {
+                display: flex;
+                background-color: #55ba59;
+                height: 40px;
+
+                margin-top: 20px;
+                border-bottom: 2px solid grey;
+
+                .available-left {
+                    width: 70%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-right: 2px solid grey;
+
+                    .price-left {
+                        display: flex;
+                        margin-left: 20px;
+                        .price-desc {
+                            margin-right: 5px;
+                            font-weight: bold;
+                            color: #aef68c;
+                        }
+
+                        .price {
+                            color: white;
+                            font-weight: bold;
+                        }
+                    }
+
+                    .available-text {
+                        display: inline-block;
+                        margin-right: 20px;
+
+                        font-weight: bold;
+                        color: #aef68c;
+                    }
+                }
+
+                .available-right {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    width: 30%;
+                    font-weight: 600;
+                    color: white;
+
+                    span {
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            .comic-description {
+                margin-top: 10px;
+                font-size: 0.9rem;
+
+                color: #838b84;
+                font-weight: bold;
+            }
+        }
+
+        .col-4 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            .adv-title {
+                text-align: end;
+                font-weight: bold;
+                font-size: 0.8rem;
+                color: #5c6e80;
+            }
+        }
+    }
+
+    .comic-spec {
+        background-color: #f6f6f6;
+
+        .container-spec {
+            min-height: 400px;
+            width: 1080px;
+            margin: auto;
+
+            .row {
+                padding-top: 2rem;
+
+                .col-title {
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                    color: #104567;
+
+                    padding-bottom: 1.8rem;
+
+                    border-bottom: 1px solid lightgrey;
+                }
+
+                .description-row {
+                    padding: 1rem 0 1.5rem 0;
+                    display: flex;
+                    justify-content: space-between;
+
+                    font-size: 0.8rem;
+
+                    border-bottom: 1px solid lightgrey;
+
+                    .row-title {
+                        width: 30%;
+                        font-weight: bold;
+                        color: #104567;
+                    }
+
+                    .row-component {
+                        width: 70%;
+
+                        .blue-span {
+                            color: #23b6df;
+                        }
+                    }
+                }
+
+                .spec-row {
+                    padding: 1rem 0 1rem 0;
+                    display: flex;
+                    justify-content: space-between;
+
+                    font-size: 0.8rem;
+
+                    border-bottom: 1px solid lightgrey;
+
+                    .row-title {
+                        width: 30%;
+                        font-weight: bold;
+                        color: #104567;
+                    }
+
+                    .row-component {
+                        width: 70%;
+
+                        .blue-span {
+                            font-weight: bold;
+                            color: #23b6df;
+                        }
                     }
                 }
             }

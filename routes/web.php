@@ -55,3 +55,8 @@ Route::get('/news', function () {
 Route::get('/shop', function () {
   return view('shop');
 })->name('shop');
+
+Route::get('/{key}comic_description', function ($key) {
+  $comic = config('comics')[$key];
+  return view('comic_description', compact('comic'));
+})->name('comic_description');
