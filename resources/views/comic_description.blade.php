@@ -106,6 +106,27 @@
             </div>
         </div>
     </div>
+
+    <div class="utility-link">
+        <div class="link-container">
+            <div class="link-card">
+                <span>DIGITAL COMICS</span>
+                <img src="{{Vite::asset('resources/images/buy-comics-digital-comics.png')}}" alt="link img">
+            </div>
+            <div class="link-card">
+                <span>SHOP DC</span>
+                <img src="{{Vite::asset('resources/images/buy-comics-subscriptions.png')}}" alt="link img">                
+            </div>
+            <div class="link-card">
+                <span>COMIC SHOP LOCATOR</span>
+                <img src="{{Vite::asset('resources/images/buy-comics-shop-locator.png')}}" alt="link img">                                
+            </div>
+            <div class="link-card">
+                <span>SUBSCRIPTIONS</span>
+                <img src="{{Vite::asset('resources/images/buy-comics-merchandise.png')}}" alt="link img">                                  
+            </div>
+        </div>
+    </div>
     
 </body>
 @endsection

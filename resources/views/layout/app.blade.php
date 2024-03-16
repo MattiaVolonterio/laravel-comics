@@ -17,6 +17,7 @@
     @include('./partials/header')
     @yield('main-title')
     @yield('body')
+    @yield('utility-link')
     @include('./partials/footer')
 </body>
 

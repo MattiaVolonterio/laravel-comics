@@ -159,42 +159,6 @@ header {
             }
         }
     }
-
-    .body-bottom {
-        min-height: 150px;
-        background-color: #0282f9;
-        display: flex;
-        align-items: center;
-
-        .container {
-            ul {
-                display: flex;
-                justify-content: space-around;
-
-                margin: 0;
-                padding: 0;
-
-                li {
-                    display: inline-block;
-
-                    a {
-                        text-decoration: none;
-                        color: white;
-
-                        font-size: 0.8rem;
-
-                        img {
-                            height: 60px;
-                            aspect-ratio: 1;
-                            margin-right: 10px;
-
-                            object-fit: contain;
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 
 // FOOTER
@@ -418,9 +382,10 @@ footer {
 
     .comic-spec {
         background-color: #f6f6f6;
+        border-bottom: 1px solid lightgray;
 
         .container-spec {
-            min-height: 400px;
+            min-height: 350px;
             width: 1080px;
             margin: auto;
 
@@ -483,6 +448,84 @@ footer {
                             font-weight: bold;
                             color: #23b6df;
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    .utility-link {
+        background-color: #f6f6f6;
+
+        .link-container {
+            min-height: 80px;
+            width: 1080px;
+            margin: auto;
+
+            display: flex;
+
+            .link-card {
+                display: flex;
+                justify-content: space-between;
+
+                width: calc(100% / 4);
+                border-left: 1px solid lightgray;
+                color: #dcdcdc;
+
+                padding: 15px 15px 15px 10px;
+
+                span {
+                    font-weight: bold;
+                    font-size: 0.7rem;
+                }
+
+                img {
+                    width: 50px;
+                    aspect-ratio: 1;
+
+                    object-fit: contain;
+
+                    filter: invert(20%);
+                }
+            }
+
+            &:nth-last-child(n) {
+                border-right: 1px solid lightgray;
+            }
+        }
+    }
+}
+
+// BODY BOTTOM
+.body-bottom {
+    min-height: 150px;
+    background-color: #0282f9;
+    display: flex;
+    align-items: center;
+
+    .container {
+        ul {
+            display: flex;
+            justify-content: space-around;
+
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: inline-block;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+
+                    font-size: 0.8rem;
+
+                    img {
+                        height: 60px;
+                        aspect-ratio: 1;
+                        margin-right: 10px;
+
+                        object-fit: contain;
                     }
                 }
             }
