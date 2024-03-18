@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\PageController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,49 +16,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', function () {
-  $comics = config('comics');
-
-  return view('comics', compact('comics'));
-})->name('comics');
-
-Route::get('/characters', function () {
-  return view('characters');
-})->name('characters');
-
-Route::get('/movies', function () {
-  return view('movies');
-})->name('movies');
-
-Route::get('/tv', function () {
-  return view('tv');
-})->name('tv');
-
-Route::get('/games', function () {
-  return view('games');
-})->name('games');
-
-Route::get('/collectibles', function () {
-  return view('collectibles');
-})->name('collectibles');
-
-Route::get('/videos', function () {
-  return view('videos');
-})->name('videos');
-
-Route::get('/fans', function () {
-  return view('fans');
-})->name('fans');
-
-Route::get('/news', function () {
-  return view('news');
-})->name('news');
-
-Route::get('/shop', function () {
-  return view('shop');
-})->name('shop');
-
-Route::get('/{key}comic_description', function ($key) {
-  $comic = config('comics')[$key];
-  return view('comic_description', compact('comic'));
-})->name('comic_description');
+Route::get('/', [PageController::class, 'comics'])->name('comics');
+Route::get('/characters', [PageController::class, 'characters'])->name('characters');
+Route::get('/movies', [PageController::class, 'movies'])->name('movies');
+Route::get('/tv', [PageController::class, 'tv'])->name('tv');
+Route::get('/games', [PageController::class, 'games'])->name('games');
+Route::get('/collectibles', [PageController::class, 'collectibles'])->name('collectibles');
+Route::get('/videos', [PageController::class, 'videos'])->name('videos');
+Route::get('/fans', [PageController::class, 'fans'])->name('fans');
+Route::get('/news', [PageController::class, 'news'])->name('news');
+Route::get('/shop', [PageController::class, 'shop'])->name('shop');
+Route::get('/comic_description/{key}', [PageController::class, 'comic_description'])->name('comic_description');

@@ -1,5 +1,10 @@
 @extends('layout.app')
 
+
+@section('document-title')
+    {{$comic['series']}}
+@endsection
+
 @section('body')
 <body id="comic-description">
     <div class="divider">
