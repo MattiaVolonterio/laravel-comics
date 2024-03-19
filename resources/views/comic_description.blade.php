@@ -5,8 +5,8 @@
     {{$comic['series']}}
 @endsection
 
-@section('body')
-<body id="comic-description">
+@section('main')
+<main id="comic-description">
     <div class="divider">
         <div class="container">
             <img src="{{$comic['thumb']}}" alt="comic_thumb" class="comic-thumb">
@@ -133,5 +133,5 @@
         </div>
     </div>
     
-</body>
+</main>
 @endsection

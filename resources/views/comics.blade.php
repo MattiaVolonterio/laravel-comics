@@ -2,8 +2,8 @@
 
 @section('document-title', 'Comics')
 
-@section('body')
-    <body id="comics-body">
+@section('main')
+    <main id="comics-body">
         {{-- top section --}}
         <div class="body-top">
             <div class="container">
@@ -38,5 +38,5 @@
         @section('utility-link')
         @include('./partials/utility_link')
         @endsection
-    </body>
+    </main>
 @endsection
